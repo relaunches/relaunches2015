@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<p>This file was edited by me just to show some changes</p>
-
 <div id="content">
 <?php include ('loop.php'); ?>
 </div>

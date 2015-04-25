@@ -1,0 +1,243 @@
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+GENERAL STUFF
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+* {margin: 0; padding:0 ;}
+
+body {margin: 0; padding: 0; background: #fff; color: #666; font-size: normal; border-top: 8px solid #222;}
+
+#main {display: block; margin: 0; padding: 0; }
+
+footer {}
+
+.container { display: block; width: 100%; max-width: 800px; margin: 0 auto; padding: 0;}
+
+a {text-decoration: none !important; color: #444;}
+
+*:hover, *:activated {outline: none;}
+
+.clear {clear: both;}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+TYPOGRAPHY
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+body
+{font-family: 'Roboto', serif; font-weight: 400; background: #fff;}
+
+h1 { font-size: 4.0em; margin: 0; font-weight: bold;}
+
+h2 {font-size: 1.8em; line-height: 1.2em; font-weight: bold; font-family: 'Montserrat'; letter-spacing: -0.5px; }
+
+h2, h1
+{text-transform: uppercase;}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+HEADER
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+#nav-container { display: block; background: #222;}
+nav {display:block; width: 100%; max-width: 800px; margin: 0 auto; font-size: 0.8em; text-transform: uppercase; color: #777; background: #eee;}
+
+header {display: block; margin: 1em 0; padding: 5em 0 3em 0; text-align: center;}
+header h1 {display: block; text-align: center; font-size: 1.4em; font-family: 'Montserrat';}
+
+header h1 a { color: #333; padding: 4px 6px; border: 4px solid #333;}
+header h1 a:hover {color: #fff; background: #222; border: 3px solid #222;}
+header small {display: block; margin: 15px 0 0 0; font-size: 0.8em; color: #444; }
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+POSTS
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+article.post { display: block; margin: 0; padding: 0; }
+
+.post-body {padding: 2em 0 1.8em 0;}
+
+.entry-body {display: block; padding: 1em 0 0 0; width: 100%;}
+
+.datestamp {display: block; width: 88%; max-width: 580px; margin: 0 auto; text-align: center; background: url('img/dotted-line.png') left center repeat-x;}
+
+.datestamp b {display: inline; background: #fff; padding: 0 10px; text-transform: uppercase; color: #666; font-size: 0.8em; font-weight: 700;}
+
+.entry-body h2 {display: block; text-align: center;}
+
+.entry-body h2 a {display: block; padding: 5px 0 0 0; text-align: center; color: #444;}
+
+article.post h2 a:hover { opacity: .8;}
+
+.cat {display: block; margin: 10px 0; text-align: center;}
+
+.cat a {display: inline; margin: 0; padding: 5px 10px 0 10px; line-height: 1.0em; text-align: center; color: #555; font-size: 0.9em; text-transform: uppercase; border-top: 2px solid #ccc; font-family: 'Montserrat';}
+
+.cat a:hover { opacity: .8;}
+
+
+
+
+
+
+.description { display: block; padding: 0.5em 0 0 0; width: 100%; max-width: 800px; margin: 0 auto; text-align: left; color: #363636; font-size: 1.0em; font-family: 'Open Sans', sans-serif; font-weight: 400;}
+
+
+.description section.text { display: block; padding: 0.5em 0 3em 0; width: 88%; max-width: 500px; margin: 0 auto; text-align: left; color: #444; font-size: 1.0em;}
+
+section.text img {display: block; width: 100%; margin: 0;}
+
+/* em für den Vortext - in größer */
+.description em {display: block; font-size: 1.1em; font-style: normal; font-weight: 600;}
+
+.description blockquote {display: block; margin-left: 5px; border-left: 4px solid #aaa; color: #444; padding: 0em 1.0em; font-size: 1.0em; line-height: 1.4em; font-family: 'Merriweather'; font-style: italic;}
+
+.description a {color: #111; border-bottom: 2px solid #ccc;}
+
+.description a:hover { border-bottom: 2px solid #ff5755;}
+
+.description i {color: #222;}
+
+.description img {display: block; margin: 0 auto; width: 90%; max-width: 800px;}
+
+
+a.more-link {display: inline-block; padding: 4px 6px; border: 3px solid #444; font-size: 0.7em; color: #444; text-transform: uppercase; font-weight: bold; font-family: 'Montserrat';}
+a:hover.more-link {background: #222; border: 3px solid #222; color: #fff;}
+
+
+section.metadata {display: block; margin: 0 0 4em 0; width: 100%; min-height: 3.5em; float: none; text-align: center; font-family: 'Montserrat';}
+
+section.metadata a {display: inline-block; margin: 0 5px 10px 0; padding: 3px 5px; font-size: 0.8em; border: 2px solid #333; color: #333; text-transform: uppercase;}
+
+section.metadata a:hover {border: 2px solid #333; color: #fff; background: #333;}
+
+
+
+/* ALTERNATIVE STYLES white */
+.font-white .description {color: #fff !important;}
+
+.font-white section.text { color: #f4f4f4;}
+
+.font-white section.text a {color: #f8f8f8; border-bottom: 2px solid #bbb;}
+
+.font-white section.text a:hover { color: #ee7d7c; border: none;}
+
+.font-white section.text i { color: #f4f4f4;}
+
+.font-white .datestamp b {color: #ddd;}
+
+
+
+
+
+/* ALTERNATIVE STYLES black */
+.font-black h2 a, .font-black h2 a:visited, .font-black .cat a, .font-black .cat a:visited
+{color: #444 !important; text-shadow: none !important;}
+
+.font-black .cat a { border-top: 2px solid #555 !important;}
+
+.font-black section.metadata a {display: inline-block; margin: 0 5px 10px 0; padding: 3px 5px; font-size: 0.8em; border: 2px solid #444; color: #444; text-transform: uppercase;}
+
+.font-black section.metadata a:hover {color: #fff; border-color: #222; background: #222;}
+
+/* ALTERNATIVE STYLES white */
+.font-white h2 a, .font-white h2 a:visited, .font-white .cat a, .font-white .cat a:visited
+{color: #fff !important; text-shadow: none !important;}
+
+.font-white .cat a { border-top: 2px solid #eee !important;}
+
+.font-white section.metadata a {display: inline-block; margin: 0 5px 10px 0; padding: 3px 5px; font-size: 0.8em; border: 2px solid #eee !important; color: #fff !important; text-transform: uppercase;}
+
+.font-white section.metadata a:hover {color: #222 !important; border-color: #fff !important; background: #fff !important;}
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+SINGLE POST
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+a.next-post-link {display: block; padding: 2.5em; background: url('img/bg-10.png'); text-align: center;}
+
+a.prev-post-link {display: block; padding: 2.5em; background: url('img/bg-30.png'); text-align: center;}
+
+span.next-entry-headline {
+	display: block;
+	max-width: 500px;
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8em;
+	color: #666;
+	text-transform: uppercase;
+}
+
+span.next-entry-title {
+	display: block;
+	max-width: 500px;
+	margin: 0 auto;
+	font-size: 1.5em;
+	line-height: 1.3em;
+	color: #444;
+	text-transform: uppercase;
+}
+
+a:hover.next-post-link {background: url('img/bg-30.png');}
+
+a:hover.prev-post-link {background: url('img/bg-60.png');}
+
+
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+MEDIA CONTENT (VIDEOS ...)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.navigation {display: block; margin: 0; padding: 0; text-align: center; }
+
+.navigation a {display: inline-block; margin: 40px 5px 0 0; padding: 4px 6px; border: 3px solid #333; font-size: 1.0em; color: #333; text-transform: uppercase; font-weight: bold; font-family: 'Montserrat';}
+
+.navigation a:hover {background: #222; border: 3px solid #222; color: #fff;}
+
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+FOOTER
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+footer {display: block; padding: 20px 0 0 0; text-align: center; font-size: 0.7em; color: #ccc; text-transform: uppercase;}
+
+footer address {}
+
+footer a {color: #aaa;}
+footer a:hover {color: #444;}
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+FANCINESS
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+a:hover
+{-webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out; }
