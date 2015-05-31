@@ -88,7 +88,6 @@
 		display: block; 
 		margin: 1em 0 1em 0.25em; 
 		border-left: 4px solid rgba(0,0,0,0.1); 
-		color: #444; 
 		padding: 0em 1.0em; 
 		font-size: 1em; 
 		font-style: normal; 
@@ -162,44 +161,6 @@ section.metadata a {display: inline-block; margin: 0 5px 10px 0; padding: 3px 5p
 
 section.metadata a:hover {border: 2px solid #333; color: #fff; background: #333;}
 
-
-
-/* ALTERNATIVE STYLES white */
-.font-white .description {color: #fff !important;}
-
-.font-white section.text { color: #f4f4f4;}
-
-.font-white section.text a {color: #f8f8f8; border-bottom: 2px solid #bbb;}
-
-.font-white section.text a:hover { color: #ee7d7c; border: none;}
-
-.font-white section.text i { color: #f4f4f4;}
-
-.font-white .datestamp b {color: #ddd;}
-
-
-
-
-
-/* ALTERNATIVE STYLES black */
-.font-black h2 a, .font-black h2 a:visited, .font-black .cat a, .font-black .cat a:visited
-{color: #444 !important; text-shadow: none !important;}
-
-.font-black .cat a { border-top: 2px solid #555 !important;}
-
-.font-black section.metadata a {display: inline-block; margin: 0 5px 10px 0; padding: 3px 5px; font-size: 0.8em; border: 2px solid #444; color: #444; text-transform: uppercase;}
-
-.font-black section.metadata a:hover {color: #fff; border-color: #222; background: #222;}
-
-/* ALTERNATIVE STYLES white */
-.font-white h2 a, .font-white h2 a:visited, .font-white .cat a, .font-white .cat a:visited
-{color: #fff !important; text-shadow: none !important;}
-
-.font-white .cat a { border-top: 2px solid #eee !important;}
-
-.font-white section.metadata a {display: inline-block; margin: 0 5px 10px 0; padding: 3px 5px; font-size: 0.8em; border: 2px solid #eee !important; color: #fff !important; text-transform: uppercase;}
-
-.font-white section.metadata a:hover {color: #222 !important; border-color: #fff !important; background: #fff !important;}
 
 
 
