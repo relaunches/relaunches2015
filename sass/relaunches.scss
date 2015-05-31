@@ -5,6 +5,18 @@
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
+body { opacity: 0; }
+.wf-active body, 
+.wf-inactive body {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-out;  
+    -moz-transition: opacity 1s ease-out; 
+    -o-transition: opacity 1s ease-out;  
+    transition: opacity 1s ease-out;  
+}
+
+
+
 
 @import 'variables';
 @import 'normalize';

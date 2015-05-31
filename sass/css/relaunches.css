@@ -1,4 +1,15 @@
 @charset "UTF-8";
+body {
+  opacity: 0; }
+
+.wf-active body,
+.wf-inactive body {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -354,22 +365,27 @@ td,
 th {
   padding: 0; }
 
-h1 font {
-  size: 24px; }
+h1 {
+  font-size: 32px;
+  text-transform: uppercase; }
 
 h2 {
   display: block;
   margin: 0 auto;
   width: 90%;
-  max-width: 600px; }
-  h2 font {
-    size: 20.8px; }
+  max-width: 600px;
+  font-size: 28px;
+  line-height: 1.2em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.5px;
+  text-transform: uppercase; }
 
-h3 font {
-  size: 19.2px; }
+h3 {
+  font-size: 19.2px; }
 
-h4 font {
-  size: 16px; }
+h4 {
+  font-size: 16px; }
 
 body {
   font-size: 16px;
@@ -377,20 +393,9 @@ body {
   font-weight: 400;
   background: #fff; }
 
-zh1 {
-  font-size: 4.0em;
-  margin: 0;
-  font-weight: bold; }
-
-h2 {
-  font-size: 1.8em;
-  line-height: 1.2em;
-  font-weight: bold;
-  font-family: 'Montserrat';
-  letter-spacing: -0.5px; }
-
-h2, h1 {
-  text-transform: uppercase; }
+header small {
+  font-size: 0.75em;
+  font-weight: 700; }
 
 .post {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
@@ -455,7 +460,7 @@ h2, h1 {
     border-left: 4px solid rgba(0, 0, 0, 0.1);
     color: #444;
     padding: 0em 1.0em;
-    font-size: 1.05em;
+    font-size: 1em;
     font-style: normal;
     line-height: 1.5em;
     font-family: 'Arvo', serif; }
