@@ -4,4 +4,4 @@
  
 </div><!-- #main --> 
 
-<?php get_footer('single'); ?>
+<?php get_footer(''); ?>

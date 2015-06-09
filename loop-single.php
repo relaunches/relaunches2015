@@ -34,6 +34,14 @@
 			<?php the_content('more'); ?>
 		</div>
 
+		<div class="metadata">
+			<p><?php the_tags('','',''); ?></p>
+		</div>
+
+		<div class="datestamp">
+			Published on <?php the_date('l, F j, Y','', ''); ?>
+		</div>
+
 		<?php edit_post_link(__('Edit', ''), '', ''); ?>
 
 </div>

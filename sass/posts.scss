@@ -6,21 +6,52 @@
 
 
 .post {
+	display: block; 
+	margin: 0; 
+	padding: 0; 
+	border-bottom: 1px solid #eee;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .post:nth-child(even) {
     background: $bg-color-alt;
+    border-bottom: 1px solid #eee;
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
+.post:last-child {
+	border-bottom: none;
+}
+
+
+// Select color
+.post ::selection {
+  background: #faa;	
+  background: rgba(255,100,100,0.5);
+}
+
+.post ::-moz-selection  {
+  background: #faa;	
+  background: rgba(255,100,100,0.5);
+}
+// Select color
+
+
+
+
 .post-body {
 	display: block;
+	padding: 0;
 	padding-bottom: 3em !important;
 }
 
+
+
+
+/// IMAGES
 .image-container {
 	display: block;
+	padding-top: 3em;
 	text-align: center;
 	img {
 		width: 100%;
@@ -33,12 +64,35 @@
 	display: block;
 	padding-top: 2em !important;
 }
+/// IMAGES
+
+
+
 
 .entry-body {
 	display: block;
+	padding: 1em 0 0 0;
 	width: 100%;
 	margin: 0 auto;
 	max-width: $content-max-width;
+
+
+	h2 {
+		display: block; 
+		text-align: center;
+	}
+
+	h2 a {
+		display: block; 
+		padding: 5px 0 0 0; 
+		text-align: center; 
+		color: #444;
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+
 }
 
 
@@ -73,10 +127,11 @@
 
 .description {
 	display: block;
-	padding: 0.5em 0 2em 0;
+	padding: 0 0 2em 0;
 	width: 90%;
 	max-width: 540px;
 	margin: 0 auto;
+
 
 	p {
 		line-height: 1.5em;
@@ -114,52 +169,122 @@
 	}
 
 
+	/* em für den Vortext - in größer */
+	em {
+		display: block; 
+		font-size: 1.1em; 
+		font-style: normal; 
+		font-weight: 600;
+	}
+
+	i {
+		color: #222;
+	}
+
+	img {
+		display: block; 
+		margin: 0 auto; 
+		width: 90%; 
+		max-width: 800px;
+	}
+
 
 // description	
 }
 
 
 
-article.post { display: block; margin: 0; padding: 0; }
-
-.post-body {padding: 0;}
-
-.entry-body {display: block; padding: 1em 0 0 0; width: 100%;}
-
-.datestamp {display: block; width: 88%; max-width: 580px; margin: 0 auto; text-align: center; background: url('img/dotted-line.png') left center repeat-x;}
-
-.datestamp b {display: inline; background: #fff; padding: 0 10px; text-transform: uppercase; color: #666; font-size: 0.8em; font-weight: 700;}
-
-.entry-body h2 {display: block; text-align: center;}
-
-.entry-body h2 a {display: block; padding: 5px 0 0 0; text-align: center; color: #444;}
-
-article.post h2 a:hover { opacity: .8;}
 
 
 
 
-
-/* em für den Vortext - in größer */
-.description em {display: block; font-size: 1.1em; font-style: normal; font-weight: 600;}
-
-
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+PAGE NAV
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
-.description i {color: #222;}
+.navigation {
+	display: block;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	padding: 2em;
 
-.description img {display: block; margin: 0 auto; width: 90%; max-width: 800px;}
+	a {
+		margin: 0.4em;
+		padding: 4px 6px; 
+		border: 3px solid #333; 
+		font-size: 1.0em; 
+		color: #333; 
+		text-transform: uppercase; 
+		font-weight: bold; 
+
+		&:hover {
+			background: #222; 
+			border: 3px solid #222; 
+			color: #fff;
+		}
+	}
+
+}
 
 
+
+.datestamp {
+	display: block;
+	text-align: center; 
+	color: #aaa;
+	color: rgba(60,60,60,0.5);
+	text-transform: uppercase;
+	font-size: .7em;
+	font-weight: 700;
+	padding: 0 0 2em 0;
+}
+
+.metadata {
+	display: block; 
+	margin: 0 0 4em 0; 
+	width: 100%; 
+	min-height: 3.5em; 
+	float: none; 
+	text-align: center; 
+	font-family: 'Montserrat';
+
+	a {
+		display: inline-block; 
+		margin: 0 5px 10px 0; 
+		padding: 3px 5px; 
+		font-size: 0.8em; 
+		border: 2px solid #333; 
+		color: #333; 
+		text-transform: uppercase;
+	}
+
+	a:hover {
+		border: 2px solid #333; 
+		color: #fff; 
+		background: #333;
+	}
+
+	
+// metadata	
+}
+
+
+
+
+
+
+
+
+
+
+
+/* OLD STYLES
 a.more-link {display: inline-block; padding: 4px 6px; border: 3px solid #444; font-size: 0.7em; color: #444; text-transform: uppercase; font-weight: bold; font-family: 'Montserrat';}
 a:hover.more-link {background: #222; border: 3px solid #222; color: #fff;}
+*/
 
 
-section.metadata {display: block; margin: 0 0 4em 0; width: 100%; min-height: 3.5em; float: none; text-align: center; font-family: 'Montserrat';}
-
-section.metadata a {display: inline-block; margin: 0 5px 10px 0; padding: 3px 5px; font-size: 0.8em; border: 2px solid #333; color: #333; text-transform: uppercase;}
-
-section.metadata a:hover {border: 2px solid #333; color: #fff; background: #333;}
 
 
 

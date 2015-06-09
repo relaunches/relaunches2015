@@ -36,7 +36,6 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 <![endif]-->
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/sass/css/relaunches.css" />
 
 <?php wp_head(); ?>
@@ -45,14 +44,24 @@
 
 <body <?php body_class(); ?>>
 
-<?php // include('navigation.php'); ?>
+<?php 
+// include('navigation.php'); 
+
+
+// Hamburger Icon
+// <i class="demo-icon icon-menu-1">&#xe803;</i>
+
+// Close Icon
+// <i class="demo-icon icon-cancel">&#xe802;</i>
+
+?>
 
 <div id="page">
 
 <header>
 
 	<h1><a href="http://relaunch.es">relaunch.es</a></h1>
-	<small>Interaction &amp; Design</small>
+	<small> Interaction &amp; Design</small>
 
 </header>
 
