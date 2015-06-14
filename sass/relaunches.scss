@@ -34,7 +34,14 @@ body { opacity: 0; }
 GENERAL STUFF
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-body {margin: 0; padding: 0; background: #fff; color: #666; font-size: normal; border-top: 8px solid #222;}
+body {
+	margin: 0; 
+	padding: 0; 
+	background: #fff; 
+	color: #444; 
+	font-size: 100%; 
+	zzzborder-top: 8px solid #222;
+}
 
 #main {display: block; margin: 0; padding: 0; }
 

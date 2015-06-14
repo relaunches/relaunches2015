@@ -1,11 +1,13 @@
+<div id="menu"><i class="demo-icon icon-menu-1">&#xe803;</i></div>
+<div id="close"><i class="demo-icon icon-cancel">&#xe802;</i></div>
+
 <div id="nav-container">
-	<nav class="nav-collapse">
-	  <ul>
-	  	<li><a href="//relaunch.es/thema/design/">Design</a></li>
-	    <li><a href="//relaunch.es/thema/ui-ux/">UI / UX</a></li>
-	    <li><a href="//relaunch.es/thema/typografie/">Typografie</a></li>
-	    <li><a href="//relaunch.es/thema/websites/">Websites</a></li>
-	    <li><a href="//relaunch.es/thema/diverses/">Diverses</a></li>
-	  </ul>
-	</nav>
+<nav>
+<ul>
+<li><a href="<?php echo get_site_url(); ?>">Home</a></li>
+<?php wp_list_categories('title_li='); ?> 
+<!--<li><a href="">Search</a></li>-->
+<!--<li><a href="">Information</a></li>-->
+</ul>
+</nav>
 </div>

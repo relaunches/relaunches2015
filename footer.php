@@ -32,5 +32,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!--<script src="<?php echo get_template_directory_uri(); ?>/js/core.js"></script>-->
 
+<script>
+$("#menu, #close").click(function(){
+    $("#nav-container").toggleClass("active");
+    $(".icon-menu-1").toggleClass("toggled");
+    $(".icon-cancel").toggleClass("toggled");
+    $("#page").toggleClass("fadeout");
+});
+</script>
+
 </body>
 </html>
