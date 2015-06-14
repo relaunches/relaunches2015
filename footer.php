@@ -1,14 +1,13 @@
 <footer>
 
 	<address>
-
-	<div class="container">
-	<!--
-	relaunches &mdash; web design showcase &middot; &copy;2013&mdash;2014 &middot; <a href="http://imin.de">Jan Hendrik Weiss</a>
-	-->
-	</div>
-
+	Bookmarks and Stories about Interaction&nbsp;&amp;&nbsp;Design
+	<br>
+	From the desk of <a href="http://imin.de">Jan Hendrik Weiss</a>
+	<br>
 	</address>
+
+	<small>&copy; MMXIV–MMXV</small>
 
 </footer>
 
@@ -16,10 +15,7 @@
 
 <?php wp_footer(); ?>
 
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.min.js"></script>
-<!--<script src="<?php echo get_template_directory_uri(); ?>/js/core.js"></script>-->
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -31,6 +27,10 @@
   ga('send', 'pageview');
 
 </script>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!--<script src="<?php echo get_template_directory_uri(); ?>/js/core.js"></script>-->
 
 </body>
 </html>

@@ -1,0 +1,49 @@
+// responsive media queries - inspired by bootstrap
+
+
+
+// XS - phones
+
+@media (max-width: $screen-xs-max) {
+
+	// general helpers
+
+	.hidden-xs {
+		display: none;
+	}
+
+
+	// contentwise from top to bottom
+
+	header {
+		padding: 2em 0; 
+	}
+
+	.post-body {
+		padding-bottom: 1em !important;
+	}
+
+	.image-container {
+		padding-top: 0;
+	}
+
+	.metadata a {
+		font-size: 1em;
+	}
+
+	.navigation {
+		padding: 2em 0;
+	}
+
+	.navigation a {
+		font-size: 1.2em;
+	}
+
+
+	footer address {
+		font-size: 0.8em;
+	}
+
+
+
+}
