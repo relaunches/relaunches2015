@@ -44,6 +44,8 @@
 
 <body <?php body_class(); ?>>
 
+<?php include('navigation.php');  ?>
+
 <?php 
 // include('navigation.php'); 
 

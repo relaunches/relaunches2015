@@ -24,17 +24,17 @@
 
 <div class="entry-body">
 
-		<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+	<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-		<div class="cat">
+	<div class="cat">
 		<?php the_category(', '); ?>
-		</div>
+	</div>
 
-		<div class="description">
-			<?php the_content('more'); ?>
-		</div>
+	<div class="description">
+		<?php the_content('more'); ?>
+	</div>
 
-		<?php edit_post_link(__('Edit', ''), '', ''); ?>
+	<?php edit_post_link(__('Edit', ''), '', ''); ?>
 
 </div>
 
@@ -42,11 +42,9 @@
 </div> <!-- post-body end-->
 
 
-
 </article> <!-- post end-->
 
 <?php endwhile; else: ?>
-
 
 <p>404</p>
 <?php endif; ?>
