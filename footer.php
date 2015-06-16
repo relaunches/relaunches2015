@@ -1,7 +1,7 @@
 <footer>
 
 	<address>
-	Bookmarks and Stories about Interaction&nbsp;&amp;&nbsp;Design
+	Stories and Bookmarks about Interaction&nbsp;&amp;&nbsp;Design
 	<br>
 	From the desk of <a href="http://imin.de">Jan Hendrik Weiss</a>
 	<br>
@@ -20,7 +20,6 @@
 <?php wp_footer(); ?>
 
 
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -34,7 +33,6 @@
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!--<script src="<?php echo get_template_directory_uri(); ?>/js/core.js"></script>-->
 
 <script>
 $("#menu, #close").click(function(){

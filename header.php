@@ -65,7 +65,7 @@
 			echo $current_tag;
 		}
 		else {
-			// echo 'Interaction &amp; Design';
+			echo 'All stories';
 		}
 
 	}
