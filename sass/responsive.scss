@@ -1,6 +1,11 @@
 // responsive media queries - inspired by bootstrap
 
 
+.visible-xs {
+	display: none;
+}
+
+
 
 // XS - phones
 
@@ -12,11 +17,15 @@
 		display: none;
 	}
 
+	.visible-xs {
+		display: block;
+	}
+
 
 	// contentwise from top to bottom
 
 	header {
-		padding: 2em 0; 
+		padding: 2em 0 1em 0; 
 	}
 
 	.post-body {

@@ -46,24 +46,31 @@
 
 <?php include('navigation.php');  ?>
 
-<?php 
-// include('navigation.php'); 
-
-
-// Hamburger Icon
-// <i class="demo-icon icon-menu-1">&#xe803;</i>
-
-// Close Icon
-// <i class="demo-icon icon-cancel">&#xe802;</i>
-
-?>
-
 <div id="page">
 
 <header>
 
 	<h1><a href="http://relaunch.es">relaunch.es</a></h1>
-	<small> Interaction &amp; Design</small>
+
+	<small> 
+	<?php
+	if(is_category('')) {
+		$category = get_the_category(); 
+		echo $category[0]->cat_name;
+	}
+	else {
+
+		if (is_tag('')) {
+			$current_tag = single_tag_title("", false); 
+			echo $current_tag;
+		}
+		else {
+			// echo 'Interaction &amp; Design';
+		}
+
+	}
+	?>
+	</small>
 
 </header>
 

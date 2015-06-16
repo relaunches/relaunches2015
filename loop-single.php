@@ -1,11 +1,11 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+<?php $image = get_post_meta( get_the_ID(), 'image', true); ?>
+<?php $imagemaxwidth = get_post_meta( get_the_ID(), 'image-max-width', true); ?>
+
 <article class="post" <?php $color = get_post_meta($post->ID, 'color', true); ?><?php if (!empty($color)) {echo 'style="background: '; echo $color; echo ';"';}?>>
 <div class="post-body <?php $font_black = get_post_meta($post->ID, 'font_black', true); ?><?php if (!empty($font_black)) {echo 'font-black';}?><?php $font_white = get_post_meta($post->ID, 'font_white', true); ?><?php if (!empty($font_white)) {echo 'font-white';}?><?php if (empty($image)) { echo 'no-image';}?>">
 
-
-<?php $image = get_post_meta($post->ID, 'image', true); ?>
-<?php $imagemaxwidth = get_post_meta($post->ID, 'image-max-width', true); ?>
 
 <?php if (!empty($image)) {
 	echo '<div class="image-container">';
@@ -34,11 +34,11 @@
 			<?php the_content('more'); ?>
 		</div>
 
-		<div class="metadata">
+		<div class="metadata hidden-xs">
 			<p><?php the_tags('','',''); ?></p>
 		</div>
 
-		<div class="datestamp">
+		<div class="datestamp hidden-xs">
 			Published on <?php the_date('l, F j, Y','', ''); ?>
 		</div>
 

@@ -60,7 +60,7 @@
 }
 
 .no-image {
-	// wenn kein bild über dem post, dann mehr abstand nach oben
+	// add padding top if there is no image
 	display: block;
 	padding-top: 2em !important;
 }
@@ -135,7 +135,7 @@
 
 	p {
 		line-height: 1.5em;
-		font-size: 1.05em;
+		font-size: 1em;
 		color: $text-color;
 	}
 
@@ -270,58 +270,31 @@ PAGE NAV
 }
 
 
-
-
-
-
-
-
-
-
-
-/* OLD STYLES
-a.more-link {display: inline-block; padding: 4px 6px; border: 3px solid #444; font-size: 0.7em; color: #444; text-transform: uppercase; font-weight: bold; font-family: 'Montserrat';}
-a:hover.more-link {background: #222; border: 3px solid #222; color: #fff;}
-*/
-
-
-
-
-
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-SINGLE POST
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-a.next-post-link {display: block; padding: 2.5em; background: url('img/bg-10.png'); text-align: center;}
-
-a.prev-post-link {display: block; padding: 2.5em; background: url('img/bg-30.png'); text-align: center;}
-
-span.next-entry-headline {
+.coming-up {
 	display: block;
-	max-width: 500px;
-	margin: 0 auto;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 0.8em;
-	color: #666;
-	text-transform: uppercase;
+	text-align: center;
+	padding: 1.4em;
+	background: rgba(0,0,0,0.05);
+
+	a {
+		display: block;
+		font-size: 1.7em;
+		line-height: 1.2em;
+		padding: 0.4em 0.5em 0.8em 0.5em;
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+	}
+
+	small {
+		display: block;
+		color: #aaa;
+		color: rgba(60,60,60,0.5);
+		text-transform: uppercase;
+		font-size: .7em;
+		font-weight: 700;
+	}
 }
-
-span.next-entry-title {
-	display: block;
-	max-width: 500px;
-	margin: 0 auto;
-	font-size: 1.5em;
-	line-height: 1.3em;
-	color: #444;
-	text-transform: uppercase;
-}
-
-a:hover.next-post-link {background: url('img/bg-30.png');}
-
-a:hover.prev-post-link {background: url('img/bg-60.png');}
-
-
 
 
 
