@@ -13,7 +13,7 @@ and (max-device-width : 1024px)
 and (orientation : portrait) { 
 
 	header {
-		padding: 2em 0 2em 0; 
+		padding: 2.5em 0 2em 0; 
 	}
 	
 	.description p {
@@ -23,6 +23,12 @@ and (orientation : portrait) {
 	.navigation a {
 		font-size: 1.3em;
 		padding: 6px 10px 6px 6px;
+		width: 50%;
+		border: none !important;
+	}
+
+	.metadata a {
+		font-size: 1em;
 	}
 
 }
@@ -52,7 +58,7 @@ and (orientation : portrait) {
 		padding-bottom: 1em !important;
 	}
 
-	.image-container, .video-container {
+	.image-container, .teaservideo {
 		padding-top: 0;
 	}
 
@@ -66,6 +72,18 @@ and (orientation : portrait) {
 
 	.navigation a {
 		font-size: 1.2em;
+		width: 50%;
+		border: none !important;
+		text-align: left !important;
+
+		&:hover, &:active, &:focus {
+			background: #fff !important;
+			color: rgba(200,0,0,0.5);
+		}
+	}
+
+	.navigation a:nth-child(even) {
+		text-align: right !important;
 	}
 
 

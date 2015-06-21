@@ -50,7 +50,7 @@
 
 <header>
 
-	<h1><a href="<?php echo get_site_url(); ?>">relaunch.es</a></h1>
+	<h1><a href="<?php echo get_site_url(); ?>">Relaunches</a></h1>
 
 	<small> 
 	<?php
