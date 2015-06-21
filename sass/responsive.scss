@@ -5,7 +5,19 @@
 	display: none;
 }
 
+// iPad Portrait
 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+
+	header {
+		padding: 2em 0 1em 0; 
+	}
+	
+
+}
 
 // XS - phones
 

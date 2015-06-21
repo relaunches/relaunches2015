@@ -53,23 +53,7 @@
 	<h1><a href="<?php echo get_site_url(); ?>">relaunch.es</a></h1>
 
 	<small> 
-	<?php
-	if(is_category('')) {
-		$category = get_the_category(); 
-		echo $category[0]->cat_name;
-	}
-	else {
-
-		if (is_tag('')) {
-			$current_tag = single_tag_title("", false); 
-			echo $current_tag;
-		}
-		else {
-			echo 'All stories';
-		}
-
-	}
-	?>
+	<?php $category = get_the_category(); echo $category[0]->cat_name; ?>
 	</small>
 
 </header>
