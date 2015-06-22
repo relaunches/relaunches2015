@@ -50,7 +50,11 @@
 
 <header>
 
-	<h1><a href="<?php echo get_site_url(); ?>">relaunch.es</a></h1>
+	<div id="logo">
+    <a class="relaunches" href="<?php echo get_site_url(); ?>">
+    Relaunches
+    </a>
+  </div>
 
 	<small> 
 	<?php $category = get_the_category(); echo $category[0]->cat_name; ?>

@@ -50,8 +50,11 @@
 
 <header>
 
-	<h1><a href="<?php echo get_site_url(); ?>">Relaunches</a></h1>
-
+	<div id="logo">
+		<a class="relaunches" href="<?php echo get_site_url(); ?>">
+		Relaunches
+		</a>
+	</div>
 	<small> 
 	<?php
 	if(is_category('')) {
