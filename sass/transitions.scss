@@ -8,3 +8,43 @@ a:hover {
 	-moz-transition: all 0.5s;
 	transition: all 0.5s; 
 }
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CSS ANIMATIONS
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@keyframes fillUp-mobile {
+	0% {
+    	padding-top: 0px;
+  	}
+  	100% {
+    	padding-top: 85px;
+  	}
+}
+
+@-webkit-keyframes fillUp-mobile {
+	0% {
+    	padding-top: 0px;
+  	}
+  	100% {
+    	padding-top: 85px;
+  	}
+}
+
+@keyframes fillUp-tablet {
+	0% {
+    	padding-top: 0px;
+  	}
+  	100% {
+    	padding-top: 85px;
+  	}
+}
+
+@-webkit-keyframes fillUp-tablet {
+	0% {
+    	padding-top: 0px;
+  	}
+  	100% {
+    	padding-top: 95px;
+  	}
+}

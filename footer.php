@@ -8,7 +8,7 @@
 	</address>
 
 	<ul>
-		<li><a href="https://twitter.com/spyline"><i class="demo-icon icon-twitter">&#xe807;</i></a></li>
+		<li><a href="https://twitter.com/relaunches"><i class="demo-icon icon-twitter">&#xe807;</i></a></li>
 	    <li><a href="https://www.pinterest.com/spyline/"><i class="demo-icon icon-pinterest">&#xe804;</i></a></li>
 	    <li><a href="<?php bloginfo('atom_url'); ?>"><i class="demo-icon icon-rss">&#xe806;</i></a></li>  
 	</ul>

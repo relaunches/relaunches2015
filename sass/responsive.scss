@@ -5,26 +5,47 @@
 	display: none;
 }
 
-// iPad Portrait
+// iPad Portrait + Landscape
 
 @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) { 
+and (max-device-width : 1024px) { 
 
 	header {
 		padding: 2.5em 0 2em 0; 
 	}
+
+	a.relaunches {
+		font-size: 1em !important;
+		padding: 95px 6px 4px 6px !important; 
+		// firing up 3D accelerator
+		-webkit-transform: translateZ(0);
+		animation-duration: 1s;
+		-webkit-animation-duration: 1s;
+    	animation-timing-function: ease-in;
+    	-webkit-animation-timing-function: ease-in;
+		animation-name: fillUp-tablet;
+		-webkit-animation-name: fillUp-tablet;
+	}
 	
 	.description p {
-		font-size: 1.2em;
+		font-size: 1.1em;
+
+		small {
+			font-size: 0.9em;
+		}
 	}
 
 	.navigation a {
 		font-size: 1.3em;
-		padding: 6px 10px 6px 6px;
-		width: 50%;
+		padding: 12px 10px 12px 6px;
 		border: none !important;
+		text-align: center;
+
+		&:hover, &:active, &:focus {
+			background: #fff !important;
+			color: rgba(200,0,0,0.5);
+		}
 	}
 
 	.metadata a {
@@ -55,8 +76,16 @@ and (orientation : portrait) {
 	}
 
 	a.relaunches {
-		font-size: 0.9em !important;
-		padding: 90px 6px 4px 6px !important; 
+		font-size: 0.8em !important;
+		padding: 85px 6px 4px 6px !important; 
+		// firing up 3D accelerator
+		-webkit-transform: translateZ(0);
+		animation-duration: 2s;
+		-webkit-animation-duration: 2s;
+    	animation-timing-function: ease-in;
+    	-webkit-animation-timing-function: ease-in;
+		animation-name: fillUp-mobile;
+		-webkit-animation-name: fillUp-mobile;
 	}
 
 	.post-body {
@@ -69,6 +98,17 @@ and (orientation : portrait) {
 
 	.metadata a {
 		font-size: 1em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	.description p {
+
+		small {
+			font-size: 0.9em;
+		}
 	}
 
 	.navigation {
