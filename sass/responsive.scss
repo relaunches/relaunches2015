@@ -18,8 +18,6 @@ and (max-device-width : 1024px) {
 	a.relaunches {
 		font-size: 1em !important;
 		padding: 95px 6px 4px 6px !important; 
-		// firing up 3D accelerator
-		-webkit-transform: translateZ(0);
 		animation-duration: 1s;
 		-webkit-animation-duration: 1s;
     	animation-timing-function: ease-in;
@@ -49,7 +47,7 @@ and (max-device-width : 1024px) {
 	}
 
 	.metadata a {
-		font-size: 1em;
+		font-size: 0.9em;
 	}
 
 }
@@ -78,10 +76,8 @@ and (max-device-width : 1024px) {
 	a.relaunches {
 		font-size: 0.8em !important;
 		padding: 85px 6px 4px 6px !important; 
-		// firing up 3D accelerator
-		-webkit-transform: translateZ(0);
-		animation-duration: 2s;
-		-webkit-animation-duration: 2s;
+		animation-duration: 1.5s;
+		-webkit-animation-duration: 1.5s;
     	animation-timing-function: ease-in;
     	-webkit-animation-timing-function: ease-in;
 		animation-name: fillUp-mobile;

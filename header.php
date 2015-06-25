@@ -28,6 +28,9 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width">
 
+<link rel="icon" type="image/png" href="<?php echo get_site_url(); ?>/favicon-16x16.png">
+<link rel="apple-touch-icon" href="<?php echo get_site_url(); ?>/apple-touch-icon.png">
+
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 
 <link rel="profile" href="http://gmpg.org/xfn/11">

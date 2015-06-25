@@ -9,14 +9,14 @@
 	display: block; 
 	margin: 0; 
 	padding: 0; 
-	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid rgba(0,0,0,0.1);
+	border-top: 1px solid rgba(255,255,255,0.4);
+	border-bottom: 1px solid rgba(0,0,0,0.07);
 }
 
 .post:nth-child(even) {
     background: $bg-color-alt;
-    border-bottom: 1px solid #eee;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(255,255,255,0.4);
+    border-bottom: 1px solid rgba(0,0,0,0.07);
 }
 
 .post:last-child {
@@ -188,6 +188,18 @@
 		max-width: 800px;
 	}
 
+	code {
+		display: block;
+		margin: 1em 0;
+		padding: 0.4em;
+		background: #333;
+		background: rgba (0,0,0, 0.8);
+		border-radius: 4px;
+		color: #eee;
+		font-size: 0.9em;
+		font-family: Monaco, Courier;
+	}
+
 
 // description	
 }
@@ -247,6 +259,7 @@ PAGE NAV
 	float: none; 
 	text-align: center; 
 	font-family: 'Montserrat';
+	font-size: .9em;
 
 	a {
 		display: inline-block; 

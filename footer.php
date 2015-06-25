@@ -39,7 +39,7 @@ $("#menu, #close").click(function(){
     $("#nav-container").toggleClass("active");
     $(".icon-menu-1").toggleClass("toggled");
     $(".icon-cancel").toggleClass("toggled");
-    $("#page").toggleClass("fadeout");
+    // $("#page").toggleClass("fadeout");
 });
 </script>
 
