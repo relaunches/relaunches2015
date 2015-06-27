@@ -67,7 +67,7 @@ NAVIGATION
 	position: absolute;
 	top: 0.2em;
 	right: 0.3em;
-	font-size: 2em;
+	font-size: 2.3em;
 	color: #444;
 	opacity: 1;
 	visibility: visible;
@@ -81,7 +81,7 @@ NAVIGATION
 
 .icon-cancel {
 	display: none;
-	font-size: 2em;
+	font-size: 2.3em;
 	color: #eee;
 	opacity: 0;
 	visibility: hidden;
@@ -190,6 +190,7 @@ FOOTER
 
 footer {
 	display: block;
+	clear: both;
 	padding: 1.5em 0;
 	background: #222;
 	text-align: center;
