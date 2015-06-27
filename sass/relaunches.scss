@@ -34,9 +34,17 @@ body { opacity: 0; }
 GENERAL STUFF
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+// Touch Events
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+}
+
+
 html {
   box-sizing: border-box;
 }
+
 
 
 body {

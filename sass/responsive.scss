@@ -51,15 +51,15 @@ and (max-device-width : 1024px) {
 
 			&:hover {
 				border: none;
-				padding-right: 3em;
-				background: #f8f8f8 !important;
+				background: none;
 			}
 
 		}
 	}
 
-	.navigation--next-page a:focus {
-		padding-left: 6em !important;
+	// overwrite width if there's only one way to navigate
+	.centered-page-nav {
+		width: 100%;
 	}
 
 	.metadata a {
@@ -138,17 +138,18 @@ and (max-device-width : 1024px) {
 			border: none;
 			text-align: center;
 
-			&:hover {
+			&:hover, &:active, &:focus {
 				border: none;
-				padding-right: 3em;
-				background: #f8f8f8 !important;
+				background: #fff !important;
+				color: rgba(200,0,0,0.5);
 			}
 
 		}
 	}
 
-	.navigation--next-page a:focus {
-		padding-left: 6em !important;
+	// overwrite width if there's only one way to navigate
+	.centered-page-nav {
+		width: 100%;
 	}
 
 
