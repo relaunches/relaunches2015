@@ -39,7 +39,15 @@ $("#menu, #close").click(function(){
     $("#nav-container").toggleClass("active");
     $(".icon-menu-1").toggleClass("toggled");
     $(".icon-cancel").toggleClass("toggled");
-    // $("#page").toggleClass("fadeout");
+    $(".icon-search").toggleClass("toggled");
+    $("body").toggleClass("noscroll");
+});
+$("#filter, #filter--active").click(function(){
+    $("#filter-container").toggleClass("active");
+    $(".icon-menu-1").toggleClass("toggled");
+    $(".icon-search").toggleClass("toggled");
+    $(".icon-search--active").toggleClass("toggled");
+    $("body").toggleClass("noscroll");
 });
 </script>
 

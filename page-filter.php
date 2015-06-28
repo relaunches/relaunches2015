@@ -1,27 +1,14 @@
-<div id="menu"><i class="demo-icon icon-menu-1">&#xe803;</i></div>
-<div id="close"><i class="demo-icon icon-cancel">&#xe802;</i></div>
+<?php
+/** Page Template Name: Filter */
 
-<div id="filter"><i class="demo-icon icon-search">&#xe805;</i></div>
-<div id="filter--active"><i class="demo-icon icon-search--active">&#xe805;</i></div>
-
-<div id="nav-container">
-<nav>
-<ul>
-<li><a href="<?php echo get_site_url(); ?>">Home</a></li>
-<?php wp_list_categories('title_li='); ?> 
-<!--<li><a href="">Information</a></li>-->
-</ul>
-</nav>
-</div>
-
-<div id="filter-container">
+get_header('slim'); ?>
 
 <?php $args = array(
 	'smallest'                  => 1.65, 
 	'largest'                   => 1.65,
 	'unit'                      => 'em', 
 	'number'                    => 45,  
-	'format'                    => 'list',
+	'format'                    => 'flat',
 	'separator'                 => "\n",
 	'orderby'                   => 'name', 
 	'order'                     => 'ASC',
@@ -34,8 +21,15 @@
 	'child_of'                  => null, // see Note!
 ); ?>
 
+<div id="content">
+
 <div class="tag-list">
 <?php wp_tag_cloud( $args ); ?>
 </div>
 
 </div>
+
+
+</div><!-- #main -->
+
+<?php get_footer(); ?>

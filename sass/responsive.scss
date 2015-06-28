@@ -47,10 +47,14 @@ and (max-device-width : 1024px) {
 			width: 100%;
 			padding: 2em 1em;
 			border: none;
+			border-top: 1px solid #eee;
+			border-left: 1px solid #eee;
 			text-align: center;
 
 			&:hover {
 				border: none;
+				border-top: 1px solid #eee;
+			border-left: 1px solid #eee;
 				background: none;
 			}
 
@@ -64,6 +68,11 @@ and (max-device-width : 1024px) {
 
 	.metadata a {
 		font-size: 0.9em;
+	}
+
+	.noscroll {
+		// no background scrolling in mobile devices
+	    position:fixed;
 	}
 
 }
@@ -136,10 +145,14 @@ and (max-device-width : 1024px) {
 			width: 100%;
 			padding: 2em 1em;
 			border: none;
+			border-top: 1px solid #eee;
+			border-left: 1px solid #eee;
 			text-align: center;
 
 			&:hover, &:active, &:focus {
 				border: none;
+				border-top: 1px solid #eee;
+				border-left: 1px solid #eee;
 				background: #fff !important;
 				color: rgba(200,0,0,0.5);
 			}
@@ -155,6 +168,11 @@ and (max-device-width : 1024px) {
 
 	footer address {
 		font-size: 0.8em;
+	}
+
+	.noscroll {
+		// no background scrolling in mobile devices
+	    position:fixed;
 	}
 
 

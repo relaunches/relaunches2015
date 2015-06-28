@@ -4,11 +4,11 @@
 ?>
 
 <div class="navigation">
-	<div class="navigation--prev-page <?php if (empty($next_page)) {echo 'centered-page-nav';}?>">
+	<div class="navigation--prev-page <?php if (empty($next_page)) {echo 'centered-page-nav';}?>" <?php if (empty($prev_page)) {echo 'style="display: none;"';}?>>
 	<?php echo get_previous_posts_link('<i class="demo-icon icon-left-open">&#xe801;</i>Newer'); ?>
 	</div>
 
-	<div class="navigation--next-page <?php if (empty($prev_page)) {echo 'centered-page-nav';}?>">
+	<div class="navigation--next-page <?php if (empty($prev_page)) {echo 'centered-page-nav';}?>" <?php if (empty($next_page)) {echo 'style="display: none;"';}?>>
 	<?php echo get_next_posts_link('Older<i class="demo-icon icon-right-open">&#xe800;</i>'); ?>
 	</div>
 </div>
