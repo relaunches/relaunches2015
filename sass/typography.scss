@@ -19,8 +19,8 @@ h2 {
 	font-size: $base-font-size * 1.7;
 	line-height: 1.2em; 
 	font-weight: bold; 
-	font-family: 'Montserrat', sans-serif; 
-	letter-spacing: -0.5px; 
+	// font-family: 'Montserrat', sans-serif; 
+	letter-spacing: -0.02em; 
 	text-transform: uppercase;
 }
 
@@ -36,7 +36,7 @@ h4 {
 
 body {
 	font-size: $base-font-size;
-	font-family: 'Roboto', sans-serif; 
+	// font-family: 'Roboto', sans-serif; 
 	font-weight: 400; 
 	background: #fff;
 }
@@ -51,7 +51,7 @@ header small {
 
 
 address {
-	font-family: 'Arvo', sans-serif;
+	// font-family: 'Arvo', sans-serif;
 }
 
 

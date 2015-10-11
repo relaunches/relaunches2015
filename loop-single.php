@@ -43,9 +43,11 @@
 			<?php the_content('more'); ?>
 		</div>
 
-		<div class="metadata hidden-xs">
+		<!-- lets skip the tags for a while
+		<div class="metadata hidden-xs hidden-sm">
 			<p><?php the_tags('','',''); ?></p>
 		</div>
+		-->
 
 		<div class="datestamp hidden-xs">
 			Published on <?php the_date('l, F j, Y','', ''); ?>

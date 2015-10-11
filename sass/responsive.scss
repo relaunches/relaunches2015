@@ -11,15 +11,25 @@
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) { 
 
+	// general helpers
+
+	.hidden-sm {
+		display: none;
+	}
+
+	.visible-sm {
+		display: block;
+	}
+
 	header {
 		padding: 2.5em 0 2em 0; 
 	}
 
 	a.relaunches {
 		font-size: 1em !important;
-		padding: 95px 6px 4px 6px !important; 
-		animation-duration: 1s;
-		-webkit-animation-duration: 1s;
+		padding: 85px 6px 4px 6px !important; 
+		animation-duration: 0.5s;
+		-webkit-animation-duration: 0.5s;
     	animation-timing-function: ease-in;
     	-webkit-animation-timing-function: ease-in;
 		animation-name: fillUp-tablet;
@@ -54,8 +64,9 @@ and (max-device-width : 1024px) {
 			&:hover {
 				border: none;
 				border-top: 1px solid #eee;
-			border-left: 1px solid #eee;
-				background: none;
+				border-left: 1px solid #eee;
+				background: #fff !important;
+				color: rgba(200,0,0,0.5);
 			}
 
 		}
@@ -68,11 +79,6 @@ and (max-device-width : 1024px) {
 
 	.metadata a {
 		font-size: 0.9em;
-	}
-
-	.noscroll {
-		// no background scrolling in mobile devices
-	    position:fixed;
 	}
 
 }
@@ -100,9 +106,9 @@ and (max-device-width : 1024px) {
 
 	a.relaunches {
 		font-size: 0.8em !important;
-		padding: 85px 6px 4px 6px !important; 
-		animation-duration: 1.5s;
-		-webkit-animation-duration: 1.5s;
+		padding: 70px 6px 4px 6px !important; 
+		animation-duration: 0.5s;
+		-webkit-animation-duration: 0.5s;
     	animation-timing-function: ease-in;
     	-webkit-animation-timing-function: ease-in;
 		animation-name: fillUp-mobile;

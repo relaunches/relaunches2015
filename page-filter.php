@@ -1,7 +1,7 @@
 <?php
 /** Page Template Name: Filter */
 
-get_header('slim'); ?>
+get_header(); ?>
 
 <?php $args = array(
 	'smallest'                  => 1.65, 

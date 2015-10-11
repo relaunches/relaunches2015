@@ -1,7 +1,7 @@
 <footer>
 
 	<address>
-	Stories and Bookmarks about Interaction&nbsp;&amp;&nbsp;Design
+	Stories &amp; Bookmarks about UX and UI Design
 	<br>
 	From the desk of <a href="http://imin.de">Jan Hendrik Weiss</a>
 	<br>
@@ -40,14 +40,7 @@ $("#menu, #close").click(function(){
     $(".icon-menu-1").toggleClass("toggled");
     $(".icon-cancel").toggleClass("toggled");
     $(".icon-search").toggleClass("toggled");
-    $("body").toggleClass("noscroll");
-});
-$("#filter, #filter--active").click(function(){
-    $("#filter-container").toggleClass("active");
-    $(".icon-menu-1").toggleClass("toggled");
-    $(".icon-search").toggleClass("toggled");
-    $(".icon-search--active").toggleClass("toggled");
-    $("body").toggleClass("noscroll");
+    $("#content").toggleClass("noscroll");
 });
 </script>
 

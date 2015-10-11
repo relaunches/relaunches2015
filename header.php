@@ -10,6 +10,7 @@
 <!--<![endif]-->
 <head>
 
+<!--
 <script type="text/javascript">
   WebFontConfig = {
     google: { families: [ 'Arvo::latin', 'Montserrat:400,700:latin', 'Roboto:400,700:latin' ] }
@@ -24,6 +25,10 @@
     s.parentNode.insertBefore(wf, s);
   })(); 
 </script>
+-->
+
+<script src="//use.typekit.net/uge1fqn.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
 
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width">
@@ -41,6 +46,8 @@
 
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/sass/css/relaunches.css" />
 
+
+
 <?php wp_head(); ?>
 
 </head>
@@ -53,8 +60,16 @@
 
 <header>
 
+	<?php
+	// random logo background
+	  $bg = array('bg-01.jpg', 'bg-02.jpg', 'bg-03.jpg', 'bg-04.jpg', 'bg-05.jpg', 'bg-06.jpg', 'bg-07.jpg' ); // array of filenames
+
+	  $i = rand(0, count($bg)-1); // generate random number size of the array
+	  $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
+	?>
+
 	<div id="logo">
-		<a class="relaunches" href="<?php echo get_site_url(); ?>">
+		<a class="relaunches" style="background: url(<?php echo get_template_directory_uri(); ?>/bgs/<?php echo $selectedBg; ?>) center center no-repeat;" href="<?php echo get_site_url(); ?>">
 		Relaunches
 		</a>
 	</div>
@@ -70,8 +85,13 @@
 			$current_tag = single_tag_title("", false); 
 			echo $current_tag;
 		}
+
+		elseif (is_page()) {
+			wp_title('');
+		}
+
 		else {
-			echo 'All stories';
+			echo 'All Stories & Bookmarks';
 		}
 
 	}
