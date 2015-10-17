@@ -30,23 +30,19 @@
 <script src="//use.typekit.net/uge1fqn.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
 
+<meta name="description" content="The latest UX/UI Design Stories &amp; Bookmarks: <?php while (have_posts()) : the_post(); ?><?php the_title(''); echo ', ' ?><?php endwhile; ?>..." />
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width">
 
 <link rel="icon" type="image/png" href="<?php echo get_site_url(); ?>/favicon-16x16.png">
 <link rel="apple-touch-icon" href="<?php echo get_site_url(); ?>/apple-touch-icon.png">
-
 <title><?php wp_title( '|', true, 'right' ); ?></title>
-
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 <![endif]-->
-
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/sass/css/relaunches.css" />
-
-
 
 <?php wp_head(); ?>
 
@@ -91,7 +87,7 @@
 		}
 
 		else {
-			echo 'All Stories & Bookmarks';
+			echo 'UX Design &infin; UI Design';
 		}
 
 	}
