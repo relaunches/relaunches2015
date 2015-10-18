@@ -6,7 +6,7 @@
 <ul>
 <li><a href="<?php echo get_site_url(); ?>">Home</a></li>
 <?php wp_list_categories('title_li='); ?> 
-<li><a href="<?php echo get_site_url(); ?>/filter">Filter</a></li>
+<li><a href="<?php echo get_site_url(); ?>/information">Information</a></li>
 <!--<li><a href="">Information</a></li>-->
 </ul>
 </nav>
