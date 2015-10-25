@@ -55,7 +55,7 @@ get_header(); ?>
 	if (0 < $numposts) $numposts = number_format($numposts); 
 	?>
 
-	<?php echo $numposts . ' '; ?>
+	<?php echo $numposts; ?>
 
 	Stories &amp; Bookmarks online. <a href="<?php echo get_site_url(); ?>">Have fun!</a>
 	<br>
