@@ -9,14 +9,16 @@
 	display: block; 
 	margin: 0; 
 	padding: 0; 
-	border-top: 1px solid rgba(255,255,255,0.3);
-	border-bottom: 1px solid rgba(0,0,0,0.07);
+	// border-bottom: 1px solid rgba(0,0,0,0.07);
+	// background: url('../../img/border-bottom.png') bottom left repeat-x;
+	// border-top: 1px solid rgba(255,255,255,0.3);
 }
 
 .post:nth-child(even) {
-    background: $bg-color-alt;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    border-bottom: 1px solid rgba(0,0,0,0.07);
+	background: $bg-color-alt;
+	// border-bottom: 1px solid rgba(0,0,0,0.07);
+    // background: $bg-color-alt url('../../img/border-bottom.png') bottom left repeat-x;
+    // border-top: 1px solid rgba(255,255,255,0.3);
 }
 
 .post:last-child {
@@ -98,6 +100,7 @@
 }
 
 
+
 .cat {
 	display: block; 
 	margin: 10px 0; 
@@ -123,6 +126,8 @@
 
 // cat
 }
+
+
 
 
 
@@ -207,7 +212,49 @@
 }
 
 
+/////////////////////////////////////
+// INVERTED TEXT
+/////////////////////////////////////
+.inverted {
 
+	h2 {
+		color: #fff !important;
+	}
+
+	h2 a {
+		color: #fff !important;
+	}
+
+	h2 a:hover {
+		opacity: .8;
+	}
+
+	.cat a {
+		color: #fff !important;
+		border-top: 2px solid rgba(255,255,255,0.8);
+	}
+
+	.description p {
+		color: #fff !important;
+	}
+
+	.description a {
+		color: #fff !important;
+	}
+
+	.description a:hover { 
+		border-bottom: 2px solid rgba(255,255,255,0.8) !important;
+	}
+
+	.description small {
+		color: #fff !important;
+	}
+
+	.datestamp {
+		color: rgba(255,255,255,0.7) !important;
+	}
+
+}
 
 
 
@@ -253,7 +300,6 @@ PAGE NAV
 .datestamp {
 	display: block;
 	text-align: center; 
-	color: #aaa;
 	color: rgba(60,60,60,0.7);
 	text-transform: uppercase;
 	font-size: .7em;
@@ -296,7 +342,8 @@ PAGE NAV
 	display: block;
 	text-align: center;
 	padding: 1.4em;
-	background: rgba(0,0,0,0.05);
+	background: rgba(255,255,255,1);
+	border-top: 1px solid rgba(0,0,0,0.05);
 
 	a {
 		display: block;

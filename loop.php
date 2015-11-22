@@ -4,8 +4,8 @@
 <?php $imagemaxwidth = get_post_meta( get_the_ID(), 'image-max-width', true); ?>
 <?php $vimeo = get_post_meta( get_the_ID(), 'vimeo', true); ?>
 
-<article class="post" <?php $color = get_post_meta($post->ID, 'color', true); ?><?php if (!empty($color)) {echo 'style="background: '; echo $color; echo ';"';}?>>
-<div class="post-body <?php $font_black = get_post_meta($post->ID, 'font_black', true); ?><?php if (!empty($font_black)) {echo 'font-black';}?><?php $font_white = get_post_meta($post->ID, 'font_white', true); ?><?php if (!empty($font_white)) {echo 'font-white';}?><?php if ( empty($vimeo) && empty($image) ) { echo 'no-image';}?>">
+<article class="post" <?php $color = get_post_meta($post->ID, 'color', true); ?><?php if (!empty($color)) {echo 'style="background-color: '; echo $color; echo ';"';}?>>
+<div class="post-body <?php $inverted = get_post_meta($post->ID, 'inverted', true); ?><?php if (!empty($inverted)) {echo 'inverted';}?> <?php if ( empty($vimeo) && empty($image) ) { echo 'no-image';}?>">
 
 
 <?php if (!empty($image)) {

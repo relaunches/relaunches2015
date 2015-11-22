@@ -83,11 +83,11 @@
 		}
 
 		elseif (is_page()) {
-			wp_title('');
+			// wp_title('');
 		}
 
 		else {
-			echo 'UX Design &infin; UI Design';
+			// echo 'UX Design &infin; UI Design';
 		}
 
 	}

@@ -192,19 +192,23 @@ MULTICOLOR POSTS ON DEFAULT
 article.post {
 
 	&:nth-child(4n+1) {
-		background: #ECF4F3;
+		background-color: #ECF4F3;
+		// background-color: #ECF4F3 url('../../img/border-bottom.png') bottom left repeat-x;
 	}
 
 	&:nth-child(4n+2) {
-		background: #FFF3F3;
+		background-color: #FFF3F3;
+		// background-color: #FFF3F3 url('../../img/border-bottom.png') bottom left repeat-x;
 	}
 
 	&:nth-child(4n+3) {
-		background: #E8EFE8;
+		background-color: #E8EFE8;
+		// background-color: #E8EFE8 url('../../img/border-bottom.png') bottom left repeat-x;
 	}
 
 	&:nth-child(4n+4) {
-		background: #F9F7EA;
+		background-color: #F9F7EA;
+		// background-color: #F9F7EA url('../../img/border-bottom.png') bottom left repeat-x;
 	}
 
 }
@@ -233,7 +237,7 @@ footer {
 	}
 
 	small {
-		font-family: 'Roboto', sans-serif !important;
+		// font-family: 'Roboto', sans-serif !important;
 		font-size: .7em;
 		color: #555;
 	}
