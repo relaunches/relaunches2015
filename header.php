@@ -73,21 +73,25 @@
 	<?php
 	if(is_category('')) {
 		$category = get_the_category(); 
+		echo 'This Thing Called ';
 		echo $category[0]->cat_name;
 	}
 	else {
 
 		if (is_tag('')) {
 			$current_tag = single_tag_title("", false); 
+			echo 'This Thing Called '; 
 			echo $current_tag;
 		}
 
 		elseif (is_page()) {
 			// wp_title('');
+			echo 'This Thing Called User Experience';
 		}
 
 		else {
 			// echo 'UX Design &infin; UI Design';
+			echo 'This Thing Called User Experience';
 		}
 
 	}

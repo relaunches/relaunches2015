@@ -1,6 +1,8 @@
 <footer>
 
 	<address>
+	<strong>This Thing Called User Experience</strong>
+	<br>
 	Stories &amp; Bookmarks about UX and UI Design
 	<br>
 	From the desk of <a href="http://imin.de">Jan Hendrik Weiss</a>

@@ -245,9 +245,13 @@ footer {
 	address {
 		display: block; 
 		padding: 0.5em;
-		font-size: 0.9em;
+		font-size: 0.8em;
 		line-height: 1.6em;
 		font-style: normal;
+
+		strong {
+			font-size: 1.1em;
+		}
 	}
 
 	ul {
